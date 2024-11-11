@@ -1,23 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PokeChronicles - Homepage</title>
-  <link href="styles.css" rel="stylesheet">
-</head>
-<body>
-  <nav>
-    <a href="journal.html">Go to Journal</a>
-  </nav>
-  
-  <h1>PokeChronicles</h1>
-  <input type="text" id="search" placeholder="Search Pokémon by name or ID">
-  <button onclick="searchPokemon()">Search</button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PokeChronicles - Homepage</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-100 text-gray-800 flex flex-col min-h-screen">
+    <!-- Header -->
+    <header class="bg-blue-600 text-white py-4">
+      <nav class="container mx-auto flex justify-between items-center px-4">
+        <h1 class="text-2xl font-bold">PokeChronicles</h1>
+        <a href="journal.html" class="text-white font-semibold hover:underline"
+          >Journal</a
+        >
+      </nav>
+    </header>
 
-  <div id="pokemon-list"></div>
+    <!-- Main Content -->
+    <main class="container mx-auto flex-1 px-4 py-6">
+      <!-- Search Section -->
+      <section class="flex justify-center mb-8">
+        <input
+          type="text"
+          id="search"
+          placeholder="Search Pokémon by name or ID"
+          class="p-2 border border-gray-300 rounded-l-md w-64 focus:outline-none focus:ring-2 focus:ring-blue-500"
+        />
+        <button
+          onclick="searchPokemon()"
+          class="p-2 bg-green-600 text-white rounded-r-md hover:bg-green-700"
+        >
+          Search
+        </button>
+      </section>
 
-  <script src="assets/js/main.js"></script>
-</body>
+      <!-- Pokémon List -->
+      <section
+        id="pokemon-list"
+        class="grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
+      >
+        <!-- Dynamically generated Pokémon cards will go here -->
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white text-center py-4">
+      <p>&copy; 2024 PokeChronicles. All rights reserved.</p>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
-
