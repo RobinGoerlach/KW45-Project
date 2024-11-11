@@ -1,36 +1,56 @@
 # PokeChronicles
 
-PokeChronicles is a simple web application that allows users to search for and save their favorite Pokémon, keeping a journal with notes about each one. The app utilizes the [Pokémon API](https://pokeapi.co/) to retrieve data and `localStorage` to manage favorites and personal notes.
+PokeChronicles is a web application that allows users to search for Pokémon, save their favorites, and keep a journal with personal notes. This app utilizes the Pokémon API to retrieve data and localStorage to manage favorites and notes. The project is bootstrapped with Create React App and styled with TailwindCSS.
 
 ## Features
 
-- **Search Pokémon** by name or ID on the homepage.
-- **View a list of Pokémon** with images and relevant stats.
-- **Add Pokémon to Favorites**, stored in `localStorage`.
-- **Add personal notes** for each favorite Pokémon.
-- **Navigate** between the Homepage and Journal pages.
+- Search Pokémon by name or ID on the homepage.
+- View Pokémon list with images and basic stats.
+- Add Pokémon to Favorites, stored in localStorage.
+- Write personal notes for each favorite Pokémon.
+- Navigate between the Homepage and Journal pages.
 
 ## Technologies
 
-- **HTML5, CSS (TailwindCSS), JavaScript**
-- **Pokémon API** for Pokémon data
-- **Local Storage** for managing favorites and notes
+- React, TailwindCSS, JavaScript
+- Pokémon API for data retrieval
+- Local Storage for managing favorites and notes
+
+## Available Scripts
+
+In the project directory, you can run:
+
+- npm start: Runs the app in development mode. Open http://localhost:3000 to view in the browser.
+- npm test: Launches the test runner in interactive watch mode.
+- npm run build: Builds the app for production in the build folder.
+- npm run eject: Removes the single build dependency from your project (irreversible).
+
+For more details, see the Create React App documentation.
 
 ## Getting Started
 
 ### Prerequisites
 
-- Modern web browser (e.g., Chrome, Firefox)
-- [Node.js and npm](https://nodejs.org/en/) (optional, if using a development server)
+- A modern web browser (e.g., Chrome, Firefox).
+- Node.js and npm installed.
 
 ### Installation
 
-1. Clone the repository:
+1.  Clone the repository:
 
 ```bash
-git clone git@github.com:RobinGoerlach/KW45-Project.git
-cd PokeChronicles
+    git clone git@github.com:RobinGoerlach/KW45-Project.git
+    cd PokeChronicles
 ```
 
-Find cool pokemones at
-https://www.giantbomb.com/profile/thewildcard/lists/the-cool-pokemon-list/363261/
+2. Install dependencies and start the development server:
+
+```bash
+- npm install
+- npm start
+
+3. Open http://localhost:3000 to view the app in your browser.
+
+## Learn More
+To learn more about React, visit the React documentation. For Create React App features, consult the documentation.
+```
